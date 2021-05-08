@@ -12,17 +12,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className="editorContainer">
-        <Editor
-          input={input}
-          onChange={changeInput}
-        />
-      </div>
-      <div className="previewerContainer">
-        <Previewer
-          value={input}
-        />
-      </div>
+      <Editor
+        input={input}
+        onChange={changeInput}
+      />
+      <Previewer
+        value={input}
+      />
     </div>
   );
 }
