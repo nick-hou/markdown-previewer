@@ -2,16 +2,16 @@ import React, {useState} from 'react'
 
 function Editor(props) {
   const [editorSize, setEditorSize] = useState('small')
-  const [editorBtn, setEditorBtn] = useState(<i class="fas fa-expand-alt"></i>)
+  const [editorBtn, setEditorBtn] = useState(<i className="fas fa-expand-alt"></i>)
 
   function resizeEditor() {
     if(editorSize === 'small') {
       setEditorSize('large')
-      setEditorBtn(<i class="fas fa-compress-alt"></i>)
+      setEditorBtn(<i className="fas fa-compress-alt"></i>)
     }
     if(editorSize === 'large') {
       setEditorSize('small')
-      setEditorBtn(<i class="fas fa-expand-alt"></i>)
+      setEditorBtn(<i className="fas fa-expand-alt"></i>)
     }
   }
 

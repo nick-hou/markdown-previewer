@@ -14,7 +14,6 @@ body {
 
 .editor-large {
   margin: auto;
-  position: absolute;
   width: 95vw;
   height: 95vh;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -46,9 +45,8 @@ body {
 
 .previewer-large {
   margin: auto;
-  position: absolute;
   width: 95vw;
-  height: 95vh;
+  min-height: 100vh;
   top: 0; left: 0; bottom: 0; right: 0;
   z-index: 1;
 }
@@ -56,6 +54,28 @@ body {
 .previewText {
   margin: 5px 20px;
   font-family: 'Noto Serif', serif;
+  text-align: left;
+}
+
+.previewText p {
+  margin: 0;
+}
+
+.previewText code {
+  background-color: white;
+}
+
+.previewText blockquote {
+  background-color: white;
+  margin: 0 30px;
+}
+
+.previewText ul {
+  margin: 0
+}
+
+.previewText li {
+  margin: 0
 }
 
 .toolbar {
