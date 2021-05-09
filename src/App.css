@@ -55,6 +55,11 @@ body {
   margin: 5px 20px;
   font-family: 'Noto Serif', serif;
   text-align: left;
+  caret-color: transparent;
+}
+
+.previewText hr {
+  margin: 0;
 }
 
 .previewText p {
